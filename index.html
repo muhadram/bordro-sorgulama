@@ -566,8 +566,8 @@
     }
 
     .search-fields .degree-field {
-      flex-basis: calc(8ch + 3em);
-      width: calc(8ch + 3em)
+      flex-basis: calc(14ch + 3em);
+      width: calc(14ch + 3em)
     }
 
     .search-fields .title-field,
@@ -1178,9 +1178,9 @@
               <div class="search-fields">
                 <label class="field compact-field year-field">Yıl<select id="search-year" required></select></label>
                 <label class="field title-field">Ünvan<select id="search-title" required></select></label>
-                <label class="field compact-field">Hizmet sınıfı<input id="search-class" readonly
+                <label class="field compact-field">Hizmet Sınıfı<input id="search-class" readonly
                     placeholder="—"></label>
-                <label class="field education-field">Öğrenim durumu<select id="search-education"
+                <label class="field education-field">Öğrenim Durumu<select id="search-education"
                     required></select></label>
                 <label class="field compact-field degree-field">Derece<select id="search-degree"
                     required></select></label>
@@ -1216,7 +1216,7 @@ function fitLocationSelect(select) { const style = getComputedStyle(select), can
 function syncSearchPlaceholders() { document.querySelectorAll("#search-form select, .search-location-controls select").forEach(select => select.classList.toggle("placeholder-option", select.value === "")); }
 function renderSearchOptions() { const old = { year: $("search-year").value, title: $("search-title").value, education: $("search-education").value, degree: $("search-degree").value }; fillSelect("search-year", years().slice().reverse(), "Yıl seçiniz", old.year); fillSelect("search-title", unique("unvan", $("search-year").value), "Ünvan seçiniz", old.title); fillSelect("search-education", unique("ogrenim", $("search-year").value), "Öğrenim seçiniz", old.education); fillSelect("search-degree", unique("derece", $("search-year").value), "Derece seçiniz", old.degree); fitSearchOptionWidths(); const provinces = data.provinces.slice().sort((a, b) => Number(a.id) - Number(b.id)); $("search-province").replaceChildren(new Option("İl seçiniz", "")); provinces.forEach(p => $("search-province").add(new Option(p.ad, String(p.id)))); $("search-province").value = searchLocation.province; fitLocationSelect($("search-province")); renderDistrictOptions(searchLocation.district); searchLocation = { province: $("search-province").value, district: $("search-district").value }; updateServiceClass(); syncSearchPlaceholders(); updateRegionSummary(); }
 function renderDistrictOptions(selected = "") { const province = $("search-province").value; const list = data.districts.filter(d => String(d.il_id) === String(province)).sort((a, b) => compareTr(a.ad, b.ad)); fillSelect("search-district", list.map(d => d.id), "İlçe seçiniz", selected); const select = $("search-district"); Array.from(select.options).slice(1).forEach((option, i) => { const district = list[i]; option.textContent = district.ad; option.dataset.group = district.grup ?? ""; }); select.disabled = !province; fitLocationSelect(select); syncSearchPlaceholders(); }
-function updateServiceClass() { const y = $("search-year").value, t = $("search-title").value; const found = data.records.find(r => String(r.yil) === y && r.unvan === t); $("search-class").value = found ? found.hizmet_sinifi : ""; }
+function updateServiceClass() { const y = $("search-year").value, t = $("search-title").value; $("search-title").disabled = !y; const found = data.records.find(r => String(r.yil) === y && r.unvan === t); $("search-class").value = found ? found.hizmet_sinifi : ""; }
 function fitSearchSelect(select, values) { const context = document.createElement("canvas").getContext("2d"); context.font = '15px "Segoe UI", Arial, sans-serif'; const widest = values.reduce((width, value) => Math.max(width, context.measureText(String(value)).width), 0); select.style.setProperty("--option-width", Math.ceil(widest + 64) + "px"); }
 function fitSearchOptionWidths() { fitSearchSelect($("search-title"), unique("unvan")); fitSearchSelect($("search-education"), unique("ogrenim")); }
 function clearSearchResults() { $("search-results").hidden = true; $("result-count").textContent = ""; $("results").replaceChildren(); }
