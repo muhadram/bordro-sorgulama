@@ -1053,7 +1053,7 @@
 
     .search-groups {
       display: grid;
-      grid-template-columns: minmax(0, 380px) minmax(0, 650px);
+      grid-template-columns: minmax(0, 3fr) minmax(0, 5fr);
       align-items: stretch;
       gap: 12px
     }
@@ -1140,7 +1140,7 @@
     }
 
     .search-fields.search-group-fields .field {
-      flex: 0 1 auto;
+      flex: 1 1 auto;
       width: max-content;
       max-width: 100%;
       gap: 4px;
@@ -1904,7 +1904,7 @@
     }
 
     body:not(.public-site) .content {
-      padding-top: calc(24px + 2cm) !important
+      padding-top: 24px !important
     }
 
     body:not(.public-site) #search-form .search-fields {
@@ -1921,7 +1921,7 @@
       text-align: justify
     }
   </style>
-<style id="public-site-style">body.public-site .sidebar-backdrop{display:none!important}body.public-site .app{grid-template-columns:minmax(0,1fr);transition:none}body.public-site .content{padding-top:calc(24px + 2cm)!important}body.public-site #search-form .search-fields{gap:20px}body.public-site #search-form .field input,body.public-site #search-form .field select,body.public-site .search-location-controls select{min-height:48px;padding-top:10px;padding-bottom:10px}body.public-site .search-location-controls .field select{text-align:left;text-align-last:left}body.public-site #page-home .search-guidance p,body.public-site #page-home .notice{text-align:justify}</style></head>
+<style id="public-site-style">body.public-site .sidebar-backdrop{display:none!important}body.public-site .app{grid-template-columns:minmax(0,1fr);transition:none}body.public-site .content{padding-top:24px!important}body.public-site #search-form .search-fields{gap:20px}body.public-site #search-form .field input,body.public-site #search-form .field select,body.public-site .search-location-controls select{min-height:48px;padding-top:10px;padding-bottom:10px}body.public-site .search-location-controls .field select{text-align:left;text-align-last:left}body.public-site #page-home .search-guidance p,body.public-site #page-home .notice{text-align:justify}</style></head>
 
 <body class="public-site">
   <div class="app sidebar-collapsed">
@@ -1972,7 +1972,7 @@
               <div class="search-location-group">
                 <div class="search-location-controls">
                   <label class="field location-field"><span>İl <span class="required-mark" aria-hidden="true">*</span></span><select id="search-province" required="" style="--option-width: 196px;"><option value="">İl seçiniz</option><option value="1">ADANA</option><option value="2">ADIYAMAN</option><option value="3">AFYONKARAHİSAR</option><option value="4">AĞRI</option><option value="5">AMASYA</option><option value="6">ANKARA</option><option value="7">ANTALYA</option><option value="8">ARTVİN</option><option value="9">AYDIN</option><option value="10">BALIKESİR</option><option value="11">BİLECİK</option><option value="12">BİNGÖL</option><option value="13">BİTLİS</option><option value="14">BOLU</option><option value="15">BURDUR</option><option value="16">BURSA</option><option value="17">ÇANAKKALE</option><option value="18">ÇANKIRI</option><option value="19">ÇORUM</option><option value="20">DENİZLİ</option><option value="21">DİYARBAKIR</option><option value="22">EDİRNE</option><option value="23">ELAZIĞ</option><option value="24">ERZİNCAN</option><option value="25">ERZURUM</option><option value="26">ESKİŞEHİR</option><option value="27">GAZİANTEP</option><option value="28">GİRESUN</option><option value="29">GÜMÜŞHANE</option><option value="30">HAKKARİ</option><option value="31">HATAY</option><option value="32">ISPARTA</option><option value="33">MERSİN</option><option value="34">İSTANBUL</option><option value="35">İZMİR</option><option value="36">KARS</option><option value="37">KASTAMONU</option><option value="38">KAYSERİ</option><option value="39">KIRKLARELİ</option><option value="40">KIRŞEHİR</option><option value="41">KOCAELİ</option><option value="42">KONYA</option><option value="43">KÜTAHYA</option><option value="44">MALATYA</option><option value="45">MANİSA</option><option value="46">KAHRAMANMARAŞ</option><option value="47">MARDİN</option><option value="48">MUĞLA</option><option value="49">MUŞ</option><option value="50">NEVŞEHİR</option><option value="51">NİĞDE</option><option value="52">ORDU</option><option value="53">RİZE</option><option value="54">SAKARYA</option><option value="55">SAMSUN</option><option value="56">SİİRT</option><option value="57">SİNOP</option><option value="58">SİVAS</option><option value="59">TEKİRDAĞ</option><option value="60">TOKAT</option><option value="61">TRABZON</option><option value="62">TUNCELİ</option><option value="63">ŞANLIURFA</option><option value="64">UŞAK</option><option value="65">VAN</option><option value="66">YOZGAT</option><option value="67">ZONGULDAK</option><option value="68">AKSARAY</option><option value="69">BAYBURT</option><option value="70">KARAMAN</option><option value="71">KIRIKKALE</option><option value="72">BATMAN</option><option value="73">ŞIRNAK</option><option value="74">BARTIN</option><option value="75">ARDAHAN</option><option value="76">IĞDIR</option><option value="77">YALOVA</option><option value="78">KARABÜK</option><option value="79">KİLİS</option><option value="80">OSMANİYE</option><option value="81">DÜZCE</option></select></label>
-                  <label class="field location-field"><span>İlçe <span class="required-mark" aria-hidden="true">*</span></span><select id="search-district" required="" style="--option-width: 147px;"><option value="">İlçe seçiniz</option><option value="1749" data-group="1">ACIGÖL</option><option value="1155" data-group="">AVANOS</option><option value="1274" data-group="">DERİNKUYU</option><option value="1367" data-group="">GÜLŞEHİR</option><option value="1374" data-group="">HACIBEKTAŞ</option><option value="1485" data-group="1">KOZAKLI</option><option value="1543" data-group="">MERKEZ</option><option value="1707" data-group="">ÜRGÜP</option></select></label>
+                  <label class="field location-field"><span>İlçe <span class="required-mark" aria-hidden="true">*</span></span><select id="search-district" required="" style="--option-width: 147px;" class=""><option value="">İlçe seçiniz</option><option value="1749" data-group="1">ACIGÖL</option><option value="1155" data-group="">AVANOS</option><option value="1274" data-group="">DERİNKUYU</option><option value="1367" data-group="">GÜLŞEHİR</option><option value="1374" data-group="">HACIBEKTAŞ</option><option value="1485" data-group="1">KOZAKLI</option><option value="1543" data-group="">MERKEZ</option><option value="1707" data-group="">ÜRGÜP</option></select></label>
                 </div>
                 <div id="region-summary" class="notice">NEVŞEHİR / MERKEZ
 Bölge Tazminatı kapsamında değil</div>
@@ -1986,13 +1986,13 @@ Bölge Tazminatı kapsamında değil</div>
                     <div><h4 id="search-group-period">Dönem ve emeklilik</h4><p>Sorgunun temel bilgileri</p></div>
                   </div>
                   <div class="search-fields search-group-fields">
-                <label class="field compact-field year-field"><span>Yıl <span class="required-mark" aria-hidden="true">*</span></span><select id="search-year" required="" class="placeholder-option"><option value="">Yıl seçiniz</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option></select></label>
-                <label class="field period-field"><span>Dönem <span class="required-mark" aria-hidden="true">*</span></span><select id="search-period" required="" style="--option-width: 141px;" class="placeholder-option">
+                <label class="field compact-field year-field"><span>Yıl <span class="required-mark" aria-hidden="true">*</span></span><select id="search-year" required="" class=""><option value="">Yıl seçiniz</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option></select></label>
+                <label class="field period-field"><span>Dönem <span class="required-mark" aria-hidden="true">*</span></span><select id="search-period" required="" style="--option-width: 141px;" class="">
                     <option value="" selected="">Dönem seçiniz</option>
                     <option value="01">Ocak–Haziran</option>
                     <option value="07">Temmuz–Aralık</option>
                   </select></label>
-                <label class="field family-field retirement-field"><span>Emeklilik Statüsü <span class="required-mark" aria-hidden="true">*</span></span><select id="search-retirement-law" required="" class="placeholder-option">
+                <label class="field family-field retirement-field"><span>Emeklilik Statüsü <span class="required-mark" aria-hidden="true">*</span></span><select id="search-retirement-law" required="" class="">
                     <option value="" selected="">Seçiniz</option>
                     <option value="5434">5434</option>
                     <option value="5510">5510</option>
@@ -2005,17 +2005,17 @@ Bölge Tazminatı kapsamında değil</div>
                     <div><h4 id="search-group-position">Görev ve öğrenim</h4><p>Ünvan ve kadro bilgileri</p></div>
                   </div>
                   <div class="search-fields search-group-fields">
-                <label class="field title-field"><span>Ünvan <span class="required-mark" aria-hidden="true">*</span></span><select id="search-title" required="" style="--option-width: 364px;" class="placeholder-option" disabled=""><option value="">Ünvan seçiniz</option><option value="AŞÇI">AŞÇI</option><option value="AYNİYAT SAYMANI">AYNİYAT SAYMANI</option><option value="BAŞ İMAM HATİP">BAŞ İMAM HATİP</option><option value="BAŞ MÜEZZİN">BAŞ MÜEZZİN</option><option value="BAŞVAİZ">BAŞVAİZ</option><option value="BAŞVAİZ - AİLE VE DİNİ REHBERLİK BÜROSU">BAŞVAİZ - AİLE VE DİNİ REHBERLİK BÜROSU</option><option value="BAŞVAİZ - BAŞKANLIK">BAŞVAİZ - BAŞKANLIK</option><option value="BEKÇİ">BEKÇİ</option><option value="CEZAEVİ VAİZİ">CEZAEVİ VAİZİ</option><option value="DİN HİZMETLERİ UZMANI">DİN HİZMETLERİ UZMANI</option><option value="DİNİ YÜKSEK İHTİSAS MERKEZİ MÜDÜRÜ">DİNİ YÜKSEK İHTİSAS MERKEZİ MÜDÜRÜ</option><option value="EĞİTİM MERKEZİ MÜDÜRÜ">EĞİTİM MERKEZİ MÜDÜRÜ</option><option value="EĞİTİM UZMANI">EĞİTİM UZMANI</option><option value="HİZMETLİ">HİZMETLİ</option><option value="HİZMETLİ (Ş)">HİZMETLİ (Ş)</option><option value="HİZMETLİ (Ş) (5-15)">HİZMETLİ (Ş) (5-15)</option><option value="İL MÜFTÜ YARDIMCISI">İL MÜFTÜ YARDIMCISI</option><option value="İL MÜFTÜSÜ">İL MÜFTÜSÜ</option><option value="İL MÜFTÜSÜ (ANKARA-İSTANBUL-İZMİR)">İL MÜFTÜSÜ (ANKARA-İSTANBUL-İZMİR)</option><option value="İL MÜFTÜSÜ (BÜYÜKŞEHİR)">İL MÜFTÜSÜ (BÜYÜKŞEHİR)</option><option value="İLÇE MÜFTÜSÜ">İLÇE MÜFTÜSÜ</option><option value="İMAM HATİP">İMAM HATİP</option><option value="KALORİFERCİ">KALORİFERCİ</option><option value="KORUMA VE GÜVENLİK GÖREVLİSİ (Silahsız)">KORUMA VE GÜVENLİK GÖREVLİSİ (Silahsız)</option><option value="KURAN KURSU BAŞ ÖĞRETİCİSİ">KURAN KURSU BAŞ ÖĞRETİCİSİ</option><option value="KURAN KURSU MÜDÜRÜ">KURAN KURSU MÜDÜRÜ</option><option value="KURAN KURSU ÖĞRETİCİSİ">KURAN KURSU ÖĞRETİCİSİ</option><option value="KURAN KURSU UZMAN ÖĞRETİCİSİ">KURAN KURSU UZMAN ÖĞRETİCİSİ</option><option value="MEMUR">MEMUR</option><option value="MEMUR (Ş) (5-15)">MEMUR (Ş) (5-15)</option><option value="MURAKIP">MURAKIP</option><option value="MUTEMET">MUTEMET</option><option value="MÜEZZİN KAYYIM">MÜEZZİN KAYYIM</option><option value="ÖĞRETMEN">ÖĞRETMEN</option><option value="ŞEF">ŞEF</option><option value="ŞEF - DIGER">ŞEF - DIGER</option><option value="ŞOFÖR">ŞOFÖR</option><option value="ŞUBE MÜDÜRÜ">ŞUBE MÜDÜRÜ</option><option value="ŞUBE MÜDÜRÜ - Din Hizmetleri ve Eğitimi">ŞUBE MÜDÜRÜ - Din Hizmetleri ve Eğitimi</option><option value="ŞUBE MÜDÜRÜ - Hac ve Umre Hizmetleri">ŞUBE MÜDÜRÜ - Hac ve Umre Hizmetleri</option><option value="ŞUBE MÜDÜRÜ - Personel ve İdari Mali İşler">ŞUBE MÜDÜRÜ - Personel ve İdari Mali İşler</option><option value="TEBERRUKAT SAYMANI">TEBERRUKAT SAYMANI</option><option value="TEKNİKER">TEKNİKER</option><option value="TEKNİSYEN">TEKNİSYEN</option><option value="UZMAN İMAM HATİP">UZMAN İMAM HATİP</option><option value="UZMAN ÖĞRETMEN">UZMAN ÖĞRETMEN</option><option value="UZMAN VAİZ">UZMAN VAİZ</option><option value="UZMAN VAİZ - AİLE VE DİNİ REHBERLİK BÜROSU">UZMAN VAİZ - AİLE VE DİNİ REHBERLİK BÜROSU</option><option value="UZMAN VAİZ - BAŞKANLIK">UZMAN VAİZ - BAŞKANLIK</option><option value="VAİZ">VAİZ</option><option value="VAİZ - AİLE VE DİNİ REHBERLİK BÜROSU">VAİZ - AİLE VE DİNİ REHBERLİK BÜROSU</option><option value="VAİZ - BAŞKANLIK">VAİZ - BAŞKANLIK</option><option value="VEKİL İMAM HATİP">VEKİL İMAM HATİP</option><option value="VEKİL MÜEZZİN KAYYIM">VEKİL MÜEZZİN KAYYIM</option><option value="VERİ HAZIRLAMA VE KONTROL İŞLETMENİ">VERİ HAZIRLAMA VE KONTROL İŞLETMENİ</option></select></label>
+                <label class="field title-field"><span>Ünvan <span class="required-mark" aria-hidden="true">*</span></span><select id="search-title" required="" style="--option-width: 364px;" class=""><option value="">Ünvan seçiniz</option><option value="AŞÇI">AŞÇI</option><option value="AYNİYAT SAYMANI">AYNİYAT SAYMANI</option><option value="BAŞ İMAM HATİP">BAŞ İMAM HATİP</option><option value="BAŞ MÜEZZİN">BAŞ MÜEZZİN</option><option value="BAŞVAİZ">BAŞVAİZ</option><option value="BAŞVAİZ - AİLE VE DİNİ REHBERLİK BÜROSU">BAŞVAİZ - AİLE VE DİNİ REHBERLİK BÜROSU</option><option value="BAŞVAİZ - BAŞKANLIK">BAŞVAİZ - BAŞKANLIK</option><option value="BEKÇİ">BEKÇİ</option><option value="CEZAEVİ VAİZİ">CEZAEVİ VAİZİ</option><option value="DİN HİZMETLERİ UZMANI">DİN HİZMETLERİ UZMANI</option><option value="DİNİ YÜKSEK İHTİSAS MERKEZİ MÜDÜRÜ">DİNİ YÜKSEK İHTİSAS MERKEZİ MÜDÜRÜ</option><option value="EĞİTİM MERKEZİ MÜDÜRÜ">EĞİTİM MERKEZİ MÜDÜRÜ</option><option value="EĞİTİM UZMANI">EĞİTİM UZMANI</option><option value="HİZMETLİ">HİZMETLİ</option><option value="HİZMETLİ (Ş)">HİZMETLİ (Ş)</option><option value="HİZMETLİ (Ş) (5-15)">HİZMETLİ (Ş) (5-15)</option><option value="İL MÜFTÜ YARDIMCISI">İL MÜFTÜ YARDIMCISI</option><option value="İL MÜFTÜSÜ">İL MÜFTÜSÜ</option><option value="İL MÜFTÜSÜ (ANKARA-İSTANBUL-İZMİR)">İL MÜFTÜSÜ (ANKARA-İSTANBUL-İZMİR)</option><option value="İL MÜFTÜSÜ (BÜYÜKŞEHİR)">İL MÜFTÜSÜ (BÜYÜKŞEHİR)</option><option value="İLÇE MÜFTÜSÜ">İLÇE MÜFTÜSÜ</option><option value="İMAM HATİP">İMAM HATİP</option><option value="KALORİFERCİ">KALORİFERCİ</option><option value="KORUMA VE GÜVENLİK GÖREVLİSİ (Silahsız)">KORUMA VE GÜVENLİK GÖREVLİSİ (Silahsız)</option><option value="KURAN KURSU BAŞ ÖĞRETİCİSİ">KURAN KURSU BAŞ ÖĞRETİCİSİ</option><option value="KURAN KURSU MÜDÜRÜ">KURAN KURSU MÜDÜRÜ</option><option value="KURAN KURSU ÖĞRETİCİSİ">KURAN KURSU ÖĞRETİCİSİ</option><option value="KURAN KURSU UZMAN ÖĞRETİCİSİ">KURAN KURSU UZMAN ÖĞRETİCİSİ</option><option value="MEMUR">MEMUR</option><option value="MEMUR (Ş) (5-15)">MEMUR (Ş) (5-15)</option><option value="MURAKIP">MURAKIP</option><option value="MUTEMET">MUTEMET</option><option value="MÜEZZİN KAYYIM">MÜEZZİN KAYYIM</option><option value="ÖĞRETMEN">ÖĞRETMEN</option><option value="ŞEF">ŞEF</option><option value="ŞEF - DIGER">ŞEF - DIGER</option><option value="ŞOFÖR">ŞOFÖR</option><option value="ŞUBE MÜDÜRÜ">ŞUBE MÜDÜRÜ</option><option value="ŞUBE MÜDÜRÜ - Din Hizmetleri ve Eğitimi">ŞUBE MÜDÜRÜ - Din Hizmetleri ve Eğitimi</option><option value="ŞUBE MÜDÜRÜ - Hac ve Umre Hizmetleri">ŞUBE MÜDÜRÜ - Hac ve Umre Hizmetleri</option><option value="ŞUBE MÜDÜRÜ - Personel ve İdari Mali İşler">ŞUBE MÜDÜRÜ - Personel ve İdari Mali İşler</option><option value="TEBERRUKAT SAYMANI">TEBERRUKAT SAYMANI</option><option value="TEKNİKER">TEKNİKER</option><option value="TEKNİSYEN">TEKNİSYEN</option><option value="UZMAN İMAM HATİP">UZMAN İMAM HATİP</option><option value="UZMAN ÖĞRETMEN">UZMAN ÖĞRETMEN</option><option value="UZMAN VAİZ">UZMAN VAİZ</option><option value="UZMAN VAİZ - AİLE VE DİNİ REHBERLİK BÜROSU">UZMAN VAİZ - AİLE VE DİNİ REHBERLİK BÜROSU</option><option value="UZMAN VAİZ - BAŞKANLIK">UZMAN VAİZ - BAŞKANLIK</option><option value="VAİZ">VAİZ</option><option value="VAİZ - AİLE VE DİNİ REHBERLİK BÜROSU">VAİZ - AİLE VE DİNİ REHBERLİK BÜROSU</option><option value="VAİZ - BAŞKANLIK">VAİZ - BAŞKANLIK</option><option value="VEKİL İMAM HATİP">VEKİL İMAM HATİP</option><option value="VEKİL MÜEZZİN KAYYIM">VEKİL MÜEZZİN KAYYIM</option><option value="VERİ HAZIRLAMA VE KONTROL İŞLETMENİ">VERİ HAZIRLAMA VE KONTROL İŞLETMENİ</option></select></label>
                 <label class="field compact-field">Hizmet Sınıfı<input id="search-class" readonly="" placeholder="—"></label>
-                <label class="field education-field"><span>Öğrenim Durumu <span class="required-mark" aria-hidden="true">*</span></span><select id="search-education" required="" style="--option-width: 181px;" class="placeholder-option"><option value="">Öğrenim seçiniz</option><option value="İlahiyat Fakültesi">İlahiyat Fakültesi</option><option value="İlköğretim">İlköğretim</option><option value="İmam Hatip Lisesi">İmam Hatip Lisesi</option><option value="Lise">Lise</option><option value="Meslek Lisesi">Meslek Lisesi</option><option value="Ortaokul">Ortaokul</option><option value="Üniversite">Üniversite</option><option value="Yüksek Okul">Yüksek Okul</option></select></label>
-                <label class="field compact-field degree-field"><span>Derece <span class="required-mark" aria-hidden="true">*</span></span><select id="search-degree" required="" class="placeholder-option"><option value="">Seç</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option></select></label>
-                <label class="field compact-field degree-field"><span>Kademe <span class="required-mark" aria-hidden="true">*</span></span><select id="search-step" required="" disabled="" title="Önce derece seçiniz" class="placeholder-option"><option value="">—</option></select></label>
-                <label class="field family-field union-field"><span>Sendika Üyesi <span class="required-mark" aria-hidden="true">*</span></span><select id="search-union-member" required="" class="placeholder-option">
+                <label class="field education-field"><span>Öğrenim Durumu <span class="required-mark" aria-hidden="true">*</span></span><select id="search-education" required="" style="--option-width: 181px;" class=""><option value="">Öğrenim seçiniz</option><option value="İlahiyat Fakültesi">İlahiyat Fakültesi</option><option value="İlköğretim">İlköğretim</option><option value="İmam Hatip Lisesi">İmam Hatip Lisesi</option><option value="Lise">Lise</option><option value="Meslek Lisesi">Meslek Lisesi</option><option value="Ortaokul">Ortaokul</option><option value="Üniversite">Üniversite</option><option value="Yüksek Okul">Yüksek Okul</option></select></label>
+                <label class="field compact-field degree-field"><span>Derece <span class="required-mark" aria-hidden="true">*</span></span><select id="search-degree" required="" class=""><option value="">Seç</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option></select></label>
+                <label class="field compact-field degree-field"><span>Kademe <span class="required-mark" aria-hidden="true">*</span></span><select id="search-step" required="" title="" class=""><option value="">Seç</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label>
+                <label class="field family-field union-field"><span>Sendika Üyesi <span class="required-mark" aria-hidden="true">*</span></span><select id="search-union-member" required="" class="">
                     <option value="" selected="">Seçiniz</option>
                     <option value="yes">Evet</option>
                     <option value="no">Hayır</option>
                   </select></label>
-                <label class="field family-field"><span>Kıdeme Esas Hizmet Yılı <span class="required-mark" aria-hidden="true">*</span></span><select id="search-service-years" required="" class="placeholder-option"><option value="">Hizmet yılı seçiniz</option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25 yıl ve üzeri</option></select></label>
+                <label class="field family-field"><span>Kıdeme Esas Hizmet Yılı <span class="required-mark" aria-hidden="true">*</span></span><select id="search-service-years" required="" class=""><option value="">Hizmet yılı seçiniz</option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25 yıl ve üzeri</option></select></label>
                   </div>
                 </section>
                 <section class="search-group" aria-labelledby="search-group-service">
@@ -2046,7 +2046,7 @@ Bölge Tazminatı kapsamında değil</div>
                   <div class="search-family-panels">
                   <div class="search-family-panel">
                   <div class="search-fields search-group-fields search-family-row">
-                <label class="field family-field"><span>Eş Yardımı <span class="required-mark" aria-hidden="true">*</span></span><select id="search-spouse" required="" class="placeholder-option">
+                <label class="field family-field"><span>Eş Yardımı <span class="required-mark" aria-hidden="true">*</span></span><select id="search-spouse" required="" class="">
                     <option value="">Seçiniz</option>
                     <option value="yes">Evet</option>
                     <option value="no">Hayır</option>
@@ -2089,7 +2089,7 @@ Bölge Tazminatı kapsamında değil</div>
                 </section>
               </div>
               <div class="search-bottom">
-                <details class="search-guidance">
+                <details class="search-guidance" open="">
                   <summary>Yardım ve vergi indirimi koşulları</summary>
                   <p>Eş yardımı, koşulları sağlayan çalışmayan ve sosyal güvenlik kuruluşundan aylık almayan eş için seçilir. Çocuk sayısında yalnızca yardım alma koşullarını sağlayan çocukları seçin; 72. ay ilk gruba dahildir. Engelli çocuk sayılarına, yardım hakkı bulunan çocuklardan artırımlı ödemeye hak kazananları dahil edin. Engelli çocuk artışı için en az %40 engellilik veya buna denk özel gereksinim raporu gerekir; 25 yaş sonrası yardım için ayrıca çalışamayacak derecede malullük koşulu aranabilir.</p>
                   <p>Vergi indirimi alanlarında yalnızca vergi indirimi hakkı onaylanan personeli ve bakmakla yükümlü olduğu kişileri seçin; çocuk sayıları ayrıca girilir. Dereceler: 1. derece en az %80, 2. derece en az %60, 3. derece en az %40 çalışma gücü kaybı. Kıdeme esas hizmet süresi en fazla 25 yıl üzerinden hesaplanır.</p>
@@ -2324,7 +2324,9 @@ Bölge Tazminatı kapsamında değil</div>
             </div>
             <div class="card-body">
               <div class="table-toolbar"><button class="btn btn-ghost btn-small" id="score-clear-filters" type="button">Filtreleri temizle</button><span class="count-label" id="score-visible"></span></div>
-              <div class="table-wrap" id="score-table-wrap"><div class="empty">Yıl seçerek kayıtları listeleyin.</div></div>
+              <div class="table-wrap" id="score-table-wrap">
+                <div class="empty">Yıl seçerek kayıtları listeleyin.</div>
+              </div>
             </div>
           </section>
         </section>
@@ -2561,7 +2563,14 @@ Bölge Tazminatı kapsamında değil</div>
         }
       });
     }
-    document.querySelectorAll(".navbtn").forEach(button => button.addEventListener("click", () => { showPage(button.dataset.page); setSidebarOpen(false); }));
+    document.querySelectorAll(".navbtn").forEach(button => button.addEventListener("click", () => {
+      showPage(button.dataset.page);
+      setSidebarOpen(false);
+      if (button.dataset.page === "home") {
+        clearSearchResults();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }));
     document.addEventListener("keydown", event => {
       if (document.querySelector(".app").classList.contains("sidebar-collapsed")) return;
       if (event.key === "Escape") { event.preventDefault(); setSidebarOpen(false); return; }
@@ -2596,6 +2605,9 @@ Bölge Tazminatı kapsamında değil</div>
     $("search-degree").addEventListener("change", updateSearchStep);
     $("search-title").addEventListener("change", updateServiceClass);
     $("search-form").addEventListener("change", () => { clearSearchResults(); syncSearchPlaceholders(); });
+    $("search-spouse").addEventListener("change", () => {
+      if ($("search-spouse").value === "yes") document.querySelector(".search-guidance").open = true;
+    });
     $("fill-search-test").addEventListener("click", () => {
       if (!data) { notify("Test verileri için kayıtların yüklenmesini bekleyin.", "error"); return; }
       const hasExample = year => {
@@ -3676,7 +3688,7 @@ Bölge Tazminatı kapsamında değil</div>
       outputAgeDialog.querySelector("#child-age-result").classList.remove("child-age-result-ok", "child-age-result-error");
       const publicStyles = outputDocument.createElement("style");
       publicStyles.id = "public-site-style";
-      publicStyles.textContent = "body.public-site .sidebar-backdrop{display:none!important}body.public-site .app{grid-template-columns:minmax(0,1fr);transition:none}body.public-site .content{padding-top:calc(24px + 2cm)!important}body.public-site #search-form .search-fields{gap:20px}body.public-site #search-form .field input,body.public-site #search-form .field select,body.public-site .search-location-controls select{min-height:48px;padding-top:10px;padding-bottom:10px}body.public-site .search-location-controls .field select{text-align:left;text-align-last:left}body.public-site #page-home .search-guidance p,body.public-site #page-home .notice{text-align:justify}";
+      publicStyles.textContent = "body.public-site .sidebar-backdrop{display:none!important}body.public-site .app{grid-template-columns:minmax(0,1fr);transition:none}body.public-site .content{padding-top:24px!important}body.public-site #search-form .search-fields{gap:20px}body.public-site #search-form .field input,body.public-site #search-form .field select,body.public-site .search-location-controls select{min-height:48px;padding-top:10px;padding-bottom:10px}body.public-site .search-location-controls .field select{text-align:left;text-align-last:left}body.public-site #page-home .search-guidance p,body.public-site #page-home .notice{text-align:justify}";
       outputDocument.querySelector("head").append(publicStyles);
       outputDocument.querySelector("#seed-data").remove();
       outputDocument.querySelector("#public-site-template")?.remove();
@@ -3802,7 +3814,11 @@ Bölge Tazminatı kapsamında değil</div>
         try {
           const { html, recordCount } = buildPublicSiteOutput();
           const url = await uploadPublicSiteToGithub(token, html);
-          notify(`${recordCount.toLocaleString("tr-TR")} kayıt GitHub'a aktarıldı: ${url}`, "ok");
+          const timestamp = new Date().toLocaleString("tr-TR", {
+            day: "2-digit", month: "2-digit", year: "numeric",
+            hour: "2-digit", minute: "2-digit", second: "2-digit"
+          });
+          notify(`${timestamp} tarihinde ${recordCount.toLocaleString("tr-TR")} kayıt GitHub'a aktarıldı: ${url}`, "ok");
           publishForm.hidden = true;
         } catch (error) {
           console.error(error);
